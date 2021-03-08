@@ -44,4 +44,15 @@ public class JsonController {
         map.put("粉丝数量" , 4153);
         return map;
     }
+
+    @RequestMapping("/map2")
+    public Map<String , Object> getMap2(){
+        Map<String , Object > map = new HashMap<>(3);
+        User user = new User(1L,"Wallen",null);
+        map.put("作者信息",user);
+        map.put("博客地址" , "www.baidu.com");
+        map.put("CSDN地址" , null);
+        map.put("粉丝数量" , 4153);
+        return map;
+    }
 }
